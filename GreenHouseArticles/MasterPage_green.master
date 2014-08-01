@@ -1,0 +1,124 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage_green.master.cs" Inherits="MasterPage_green" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Articles | The Green House</title>
+
+	<meta charset="utf-8" />
+	<meta name="Description" content="Learn about our history, our mission and team. Weatherstripping installation company for energy saving and arranged houses for a green consumption.Designed and developed by Fede Hartman." />
+	<meta name="Keywords" content="green, house, weatherstripping, environment, planning, ecology, energy, save, consumption, weather, houses, country, fede, hartman, html 5, web, design, development, html, css, jquery,  montevideo, uruguay" />
+	<meta name="robots" content="all" />
+
+	<link rel="index" title="The Green House" href="default.aspx" />
+	<link rel="prev" title="The Green House" href="default.aspx" />
+	<link rel="next" title="Planning | The Green House" href="planning.html" />
+	<link rel="bookmark" title="About | The Green House" href="Articles.aspx" />
+
+	<link rel="stylesheet" href="css/greenhouse.css" />
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    <asp:ContentPlaceHolder id="head" runat="server">
+
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+    <header>
+
+		<div class="wrapper">
+
+		<hgroup>
+			<h1><a href="default.aspx" title="Home"><span class="gg">About | The Green House</span></a></h1>
+			<h2><span class="gg">Learn about our history, our mission and team.</span></h2>
+		</hgroup>  
+
+		<nav>
+			<ul>
+				<li class="nav_home"><a class="active" href="default.aspx" title="Home"><span class="gg" >Home</span></a></li>
+				<li class="nav_about"><a href="Articles.aspx?id=0&pageid=1" title="Articles"><span class="gg" >Articles</span></a></li>
+				<li class="nav_planning"><a href="submit_articles.aspx" title="Submit Articles"><span class="gg" >Submit Articles</span></a></li>
+				<li class="nav_environment"><a href="membership.aspx" title="Membership"><span class="gg" >Membership</span></a></li>
+			</ul>
+		</nav>  
+
+		</div> <!--"wrapper" -->
+
+	</header>
+
+
+<!--*|MAIN|****************************************************************************************************************************************************************↓↓↓**/-->
+
+	<div id="container">
+
+		<div id="cuestiones"></div> <!--the curve thing -->
+
+		<div id="main" class="about"></div> <!--background photos -->
+
+		<section id="about">
+			        <asp:ContentPlaceHolder id="BodyP" runat="server">
+        
+        </asp:ContentPlaceHolder>
+		</section>
+
+	</div> <!--"container" -->
+
+
+<!--*|FOOTER|**************************************************************************************************************************************************************↓↓↓**/-->
+	<footer>
+
+		<div class="wrapper">
+
+		<ul id="footer">
+			<li class="footer_company active">
+				<h5><a href="Articles.aspx" title="About">· The Company</a></h5>
+					<p>· Learn about our history</p>
+					<p>· Know about our mission and team</p>
+			</li>
+			<li class="footer_planning">
+				<h5><a href="planning.html" title="Planning">· Planning</a></h5>
+					<p>· Weatherstripping from scratch</p>
+					<p>· Professionals at your disposal</p>
+			</li>
+			<li class="footer_environment">
+				<h5><a href="environment.html" title="Environment">· Environment</a></h5>
+					<p>· Build your Green House</p>
+					<p>· Choose different environments</p>
+			</li>
+			<li class="footer_contact">
+				<h5><a href="contact.html" title="Contact">· Contact</a></h5>
+					<p>· Send us a message</p>
+					<p>· Visit us at our showrooms</p>
+			</li>
+		</ul> <!--"footer" -->
+
+		<h6 class="left">&copy; 2009 - 2010 &nbsp;<a href="default.aspx" title="Home">The Green House Articls</a>  &nbsp;| &nbsp; Icons by <a href="http://dellustrations.com/" title="Dellustrations" target="_blank">Dellustrations</a></h6>
+		<h6 class="right">Development &amp; Design: <a class="footer_logo" href="http://lifeforcebd.com" title="Mohd. Momin AL Aziz">Mohd. Momin AL Aziz</a></h6>
+
+		</div> <!--"wrapper" -->
+
+	</footer>
+  
+
+<!--*|SCRIPTS|*************************************************************************************************************************************************************↓↓↓**/-->
+
+	<!--jQuery-->
+		<script src="../code.jquery.com/jquery-1.4.1.min.js" type="text/javascript"></script>
+		<script src="js/greenhouse.js" type="text/javascript"></script>
+		<script src="js/sifr.js" type="text/javascript"></script>
+		<script src="js/sifr-config.js" type="text/javascript"></script>
+		<script src="js/cycle.js" type="text/javascript"></script>
+		<script src="js/swfobject.js" type="text/javascript"></script>
+		<script src="js/lightbox.js" type="text/javascript"></script>
+		<script src="js/form-defaults.js" type="text/javascript"></script>
+
+
+
+    </div>
+    </form>
+</body>
+</html>
